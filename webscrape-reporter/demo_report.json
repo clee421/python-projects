@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "total_links": 3,
+    "unique_domains": 2,
+    "top_domains": [
+      [
+        "example.com",
+        2
+      ],
+      [
+        "github.com",
+        1
+      ]
+    ]
+  },
+  "links": [
+    "https://example.com",
+    "https://github.com",
+    "https://example.com/page1"
+  ]
+}

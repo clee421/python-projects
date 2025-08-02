@@ -1,0 +1,13 @@
+Summary:
+total_links: 7
+unique_domains: 3
+top_domains: [('example.com', 2), ('github.com', 2), ('stackoverflow.com', 1)]
+
+Links:
+https://example.com
+https://github.com
+https://example.com/page1
+https://github.com/user/repo
+https://stackoverflow.com
+/relative-link
+#section1
