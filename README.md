@@ -48,6 +48,18 @@ Build a Python project called `webscrape-reporter` using a `src/` layout and onl
   ```
 ```
 
+### Cost
+
+```
+Total cost:            $0.90
+Total duration (API):  4m 55.9s
+Total duration (wall): 16m 58.2s
+Total code changes:    318 lines added, 39 lines removed
+Usage by model:
+    claude-3-5-haiku:  22.6k input, 1.6k output, 0 cache read, 0 cache write
+       claude-sonnet:  97 input, 15.5k output, 1.5m cache read, 55.2k cache write
+```
+
 ## How to run
 
 Run the command `webscrape-report https://news.ycombinator.com/ --format csv`
