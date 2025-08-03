@@ -5,10 +5,10 @@ from urllib.parse import urlparse
 def summarize(links: list[str]) -> dict:
     """
     Generate statistics summary from a list of links.
-    
+
     Args:
         links: List of link strings
-        
+
     Returns:
         Dictionary containing:
         - total_links: Total number of links
@@ -18,7 +18,8 @@ def summarize(links: list[str]) -> dict:
     # Filter out empty links and extract domains
     valid_links = [link for link in links if link and link.strip()]
     domains = []
-    
+
+    # (calvinl) TODO: i wonder if there's a better way to do this
     for link in valid_links:
         try:
             parsed = urlparse(link)
@@ -35,9 +36,9 @@ def summarize(links: list[str]) -> dict:
         except Exception:
             # Skip malformed URLs
             continue
-    
+
     domain_counts = Counter(domains)
-    
+
     return {
         "total_links": len(valid_links),
         "unique_domains": len(domain_counts),

@@ -5,13 +5,13 @@ import urllib.error
 def fetch_url(url: str) -> str:
     """
     Fetch the raw HTML content from a given URL.
-    
+
     Args:
         url: The URL to fetch
-        
+
     Returns:
         The HTML content as a string
-        
+
     Raises:
         urllib.error.URLError: If the URL cannot be fetched
         urllib.error.HTTPError: If an HTTP error occurs
@@ -28,4 +28,5 @@ def fetch_url(url: str) -> str:
     except UnicodeDecodeError:
         # Try with different encoding if UTF-8 fails
         with urllib.request.urlopen(url) as response:
+            # (calvinl): TODO: what is latin-1 format
             return response.read().decode('latin-1')

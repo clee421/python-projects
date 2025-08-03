@@ -1,9 +1,10 @@
 from html.parser import HTMLParser
 
 
+# (calvinl) TODO: look into the HTMLParser
 class LinkExtractor(HTMLParser):
     """HTML parser that extracts href attributes from anchor tags."""
-    
+
     def __init__(self):
         super().__init__()
         self.links = []
@@ -19,10 +20,10 @@ class LinkExtractor(HTMLParser):
 def parse_html(html: str) -> list[str]:
     """
     Parse HTML content and extract all href links.
-    
+
     Args:
         html: The HTML content as a string
-        
+
     Returns:
         A list of href link strings found in the HTML
     """
